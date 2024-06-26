@@ -1,2 +1,8 @@
 form_url:
   browserA: https://demo.nopcommerce.com/
+  name: John Doe
+  email: john.dode@sexample.com
+  password: Minh$%&*Sy7w6r
+  cfpasssword: Minh$%&*Sy7w6r
+test_data:
+
