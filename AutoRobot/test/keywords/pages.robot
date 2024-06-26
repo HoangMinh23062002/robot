@@ -25,7 +25,6 @@ ${WAIT_TIMEOUT}    Get Value From YAML    WAIT_TIMEOUT
 ...    sucessMsg=xpath=//div[@class='result']
 &{listLocator}
 ...    menu_value=xpath=//ul[@class='top-menu notmobile']/li/a
-...    apprarel_menu=xpath=(//ul[@class='top-menu notmobile']/li/a)[3]
 ...    header_logo=xpath=//div[@class='header-logo']/a
 
 # Set variable for input data
@@ -52,7 +51,7 @@ Get List of text from locator
 
     FOR    ${element}    IN    @{elements}
     ${getMenuText}=    SeleniumLibrary.Get Text    ${element}
-    
+
     BuiltIn.Run Keyword If    '${getMenuText}' == 'Apprel'    # robotcode: ignore
     SeleniumLibrary.Click Element    ${listLocator.menu_value}
 
