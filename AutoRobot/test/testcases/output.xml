@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-06-26T17:19:34.835162" rpa="false" schemaversion="5">
+<suite id="s1" name="Testcase1" source="C:\Users\smartosc\Robotfamework\AutoRobot\test\testcases\testcase1.robot">
+<test id="s1-t1" name="Login Test" line="7">
+<kw name="Login To Application" owner="pages">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-26T17:19:35.145881" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
+<arg>${form_url.browserA}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-26T17:19:35.145881" elapsed="2.782590"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-26T17:19:37.928471" elapsed="0.026266"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-26T17:19:37.954737" level="INFO">Clicking element 'xpath=//a[@class='ico-register']'.</msg>
+<arg>${dictMinh.register_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-26T17:19:37.954737" elapsed="0.985185"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-26T17:19:38.941923" level="INFO">Typing text 'John Doe' into text field 'xpath=//input[@id='FirstName']'.</msg>
+<arg>${dictMinh.firstName_field}</arg>
+<arg>${form_url.name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-26T17:19:38.940922" elapsed="0.093870"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-26T17:19:39.035796" level="INFO">Typing text 'John Doe' into text field 'xpath=//input[@id='LastName']'.</msg>
+<arg>${dictMinh.lastName_field}</arg>
+<arg>${form_url.name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-26T17:19:39.035796" elapsed="0.070225"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-06-26T17:19:39.106021" level="INFO">Selecting options from selection list 'xpath=//select[@name='DateOfBirthDay']' by value 6.</msg>
+<arg>${dictMinh.day_field}</arg>
+<arg>6</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-06-26T17:19:39.106021" elapsed="0.048400"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-06-26T17:19:39.154421" level="INFO">Selecting options from selection list 'xpath=//select[@name='DateOfBirthMonth']' by value 6.</msg>
+<arg>${dictMinh.month_field}</arg>
+<arg>6</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-06-26T17:19:39.154421" elapsed="0.045511"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-06-26T17:19:39.199932" level="INFO">Selecting options from selection list 'xpath=//select[@name='DateOfBirthYear']' by value 1990.</msg>
+<arg>${dictMinh.year_field}</arg>
+<arg>1990</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-06-26T17:19:39.199932" elapsed="0.038998"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-26T17:19:39.239930" level="INFO">Typing text 'john.dode@sexample.com' into text field 'xpath=//input[@id='Email']'.</msg>
+<arg>${dictMinh.email_field}</arg>
+<arg>${form_url.email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-26T17:19:39.238930" elapsed="0.088928"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-26T17:19:39.328858" level="INFO">Typing text 'Minh$%&amp;*Sy7w6r' into text field 'xpath=//input[@id='Password']'.</msg>
+<arg>${dictMinh.passwordd_field}</arg>
+<arg>${form_url.password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-26T17:19:39.327858" elapsed="0.072701"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-26T17:19:39.401558" level="INFO">Typing text 'Minh$%&amp;*Sy7w6r' into text field 'xpath=//input[@id='ConfirmPassword']'.</msg>
+<arg>${dictMinh.cfPassword_field}</arg>
+<arg>${form_url.cfpasssword}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-26T17:19:39.400559" elapsed="0.069517"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-26T17:19:39.471076" level="INFO">Clicking element 'xpath=//button[@id='register-button']'.</msg>
+<arg>${dictMinh.registerButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-26T17:19:39.470076" elapsed="0.340415"/>
+</kw>
+<doc>Opens the browser and registers a new user</doc>
+<status status="PASS" start="2024-06-26T17:19:35.144877" elapsed="4.665614"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2024-06-26T17:19:39.998680" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-26T17:19:39.998680" level="FAIL">Element with locator 'xpath=//div[@class='result']' not found.</msg>
+<arg>${dictMinh.sucessMsg}</arg>
+<arg>Your registration completed</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="FAIL" start="2024-06-26T17:19:39.810491" elapsed="0.192563">Element with locator 'xpath=//div[@class='result']' not found.</status>
+</kw>
+<status status="FAIL" start="2024-06-26T17:19:35.144877" elapsed="4.858177">Element with locator 'xpath=//div[@class='result']' not found.</status>
+</test>
+<test id="s1-t2" name="Get value" line="10">
+<kw name="Get List of text from locator" owner="pages">
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2024-06-26T17:19:40.011053" level="INFO">@{elements} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="ebc170dfe8eca9939d652a545340024d", element="f.C5E5E797A6D2AB80B89BCC66BADE344F.d.A68180CC38FA2EDC1D6F2EAF92FDE1A4.e.129")&gt; | &lt;selenium.webd...</msg>
+<var>@{elements}</var>
+<arg>${listLocator.menu_value}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2024-06-26T17:19:40.004054" elapsed="0.006999"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-06-26T17:19:40.011053" level="INFO">@{list_values} = [ ]</msg>
+<var>@{list_values}</var>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-06-26T17:19:40.011053" elapsed="0.000000"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-06-26T17:19:40.019561" level="INFO">${getMenuText} = Computers</msg>
+<var>${getMenuText}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-26T17:19:40.011053" elapsed="0.008508"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<msg time="2024-06-26T17:19:40.019561" level="FAIL">Keyword 'BuiltIn.Run Keyword If' expected at least 2 arguments, got 1.</msg>
+<arg>'${getMenuText}' == 'Apprel'</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="FAIL" start="2024-06-26T17:19:40.019561" elapsed="0.000000">Keyword 'BuiltIn.Run Keyword If' expected at least 2 arguments, got 1.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${listLocator.menu_value}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-26T17:19:40.019561" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="ebc170dfe8eca9939d652a545340024d", element="f.C5E5E797A6D2AB80B89BCC66BADE344F.d.A68180CC38FA2EDC1D6F2EAF92FDE1A4.e.129")&gt;</var>
+<status status="FAIL" start="2024-06-26T17:19:40.011053" elapsed="0.008508">Keyword 'BuiltIn.Run Keyword If' expected at least 2 arguments, got 1.</status>
+</iter>
+<var>${element}</var>
+<value>@{elements}</value>
+<status status="FAIL" start="2024-06-26T17:19:40.011053" elapsed="0.008508">Keyword 'BuiltIn.Run Keyword If' expected at least 2 arguments, got 1.</status>
+</for>
+<kw name="Log Many" owner="BuiltIn">
+<arg>@{list_values}</arg>
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<status status="NOT RUN" start="2024-06-26T17:19:40.019561" elapsed="0.000000"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${list_values}</arg>
+<arg>Minhhh</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" start="2024-06-26T17:19:40.019561" elapsed="0.000000"/>
+</kw>
+<kw name="Log Many" owner="BuiltIn">
+<arg>@{list_values}</arg>
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<status status="NOT RUN" start="2024-06-26T17:19:40.020563" elapsed="0.000000"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<var>@{my_list_B}</var>
+<arg>MInh</arg>
+<arg>Tram</arg>
+<arg>Tu</arg>
+<arg>Tuan</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="NOT RUN" start="2024-06-26T17:19:40.020563" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Last name: ${my_list_B}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-06-26T17:19:40.020563" elapsed="0.000000"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<var>${my_list_C}</var>
+<arg>${list_values}</arg>
+<arg>${my_list_B}</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="NOT RUN" start="2024-06-26T17:19:40.020563" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Combined list: ${my_list_C}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-06-26T17:19:40.020563" elapsed="0.000000"/>
+</kw>
+<kw name="List Should Contain Value" owner="Collections">
+<arg>${my_list_B}</arg>
+<arg>Tu</arg>
+<doc>Fails if the ``value`` is not found from ``list``.</doc>
+<status status="NOT RUN" start="2024-06-26T17:19:40.020563" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-06-26T17:19:40.004054" elapsed="0.016509">Keyword 'BuiltIn.Run Keyword If' expected at least 2 arguments, got 1.</status>
+</kw>
+<status status="FAIL" start="2024-06-26T17:19:40.003054" elapsed="0.017509">Keyword 'BuiltIn.Run Keyword If' expected at least 2 arguments, got 1.</status>
+</test>
+<status status="FAIL" start="2024-06-26T17:19:34.837146" elapsed="5.184212"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="Testcase1">Testcase1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
